@@ -1,0 +1,57 @@
+/* thanks.css */
+.thankYouPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .orderContent {
+    margin-bottom: 20px;
+  }
+  
+  .orderMessage {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .deliveryImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .orderContent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .thankYouMessage {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .orderButton {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .shopLink, .homeLink {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shopLink:hover, .homeLink:hover {
+    background-color: #0056b3;
+  }
+  

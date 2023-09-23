@@ -1,0 +1,158 @@
+/* VegetableProducts.css */
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Vegetable Products Container */
+.vegetable-products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Product List */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Product Item */
+.product-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Product Details */
+.product-details {
+  padding: 20px;
+}
+
+/* Product Title */
+.product-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Product Description */
+.product-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+.error-message {
+  font-size: 20px;
+  color: #ff0000;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Success Message */
+.success-message {
+  font-size: 20px;
+  color: #008000;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Login Modal */
+.login-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.login-modal h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.login-modal p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.login-modal button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-modal button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .product-item {
+    margin-bottom: 20px;
+  }
+}
